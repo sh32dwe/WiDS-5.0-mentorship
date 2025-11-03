@@ -8,7 +8,7 @@ The objective is to develop an AI system that can answer natural-language questi
 - Build a Vision+Language pipeline using BLIP, CLIP, or Flamingo-style models
 - Train and test on VQA v2 or VizWiz datasets
 - Visualize attention heatmaps for explainability
-- Evaluate using accuracy and plausibility metrics
+
 
 ## Week 1: Getting Started
 - Understand the VQA problem and datasets
@@ -18,8 +18,8 @@ The objective is to develop an AI system that can answer natural-language questi
 
 ## Setup Instructions
 ```bash
-git clone https://github.com/<your-username>/Look-Ask-Explain-VQA.git
-cd Look-Ask-Explain-VQA
+git clone https://github.com/sh32dwe/WiDS-5.0-mentorship.git
+cd WiDS-5.0-mentorship
 pip install -r requirements.txt
 ```
 
