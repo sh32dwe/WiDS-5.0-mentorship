@@ -132,3 +132,47 @@ Expected example output:
 If ***False*** appears, your CUDA or PyTorch installation needs adjustment.
 
 [Learning Resources](https://www.geeksforgeeks.org/applications-of-computer-vision/)
+
+
+---
+
+## PyTorch for Deep Learning
+
+PyTorch is a popular open-source deep learning framework known for its flexibility and ease of use. It supports dynamic computation graphs, making it ideal for research and experimentation in NLP, computer vision, and reinforcement learning. Below are some recommended resources to get started — use as many as you need
+
+ * [[Codemy.com – Deep Learning With PyTorch]](https://www.youtube.com/playlist?list=PLCC34OHNcOtpcgR9LEYSdi9r7XIbpkpK1) : First 17 videos are sufficient :)
+ * [[PyTorch – PyTorch Beginner Series]](https://www.youtube.com/playlist?list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN)
+ * [[Official PyTorch Documentation]](https://docs.pytorch.org/docs/stable/index.html) : Always go through the documentation to understand and fix your errors, you can use ChatGPT/Microsoft Bing/Copilot for Code Error Correction too, however, it gets too easy then :)
+
+
+## Neural Network and CNN (Convolutional Neural Network) in Computer Vision
+
+### Neural Network and Deep Neural Network
+Inspired by the human brain, neural networks use interconnected artificial “neurons” to process inputs and generate outputs. They power applications like image recognition, language processing, and decision-making. Explore these resources to understand how they enable intelligent systems.
+
+1. [[Neural Networks--3Blue1Brown]](https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&si=9lcJKb1AlcvvPxwZ) : First 4 videos should suffice.
+2. [[The spelled-out intro to neural networks and backpropagation: Building micrograd--
+Andrej Karpathy]](https://youtu.be/VMj-3S1tku0?si=GvBjrYHb4wPrZX5M) : This is the most step-by-step spelled-out explanation of backpropagation and training of neural networks. It only assumes basic knowledge of Python and a vague recollection of calculus.
+3. [[Implementation of  Basic Neural Network with single hidden layer]](https://www.youtube.com/watch?v=mlk0rddP3L4&list=PLuhqtP7jdD8CftMk831qdE8BlIteSaNzD) : First 7 videos should suffice
+
+### Convolutional Neural Networks
+A Convolutional Neural Network (ConvNet) is a class of deep learning models designed to process data with a grid-like topology, such as images. It is a foundational technology for most modern computer vision applications and is inspired by the human visual cortex.
+
+They are used in a wide range of fields:
+* Image classification, Segmentation and object detection (e.g., in self-driving cars, social media tagging)
+* Medical image analysis (e.g., detecting tumors in X-rays or MRIs)
+* Natural language processing and speech recognition (e.g., virtual assistants)
+
+**Learning Resources**
+Go 
+1. [Convolutional Neural Networks: A Comprehensive Guide (Medium)](https://medium.com/thedeephub/convolutional-neural-networks-a-comprehensive-guide-5cc0b5eae175)
+2. [CNN Explainer: Visual Explaination of Convolutional Neural Networks](https://poloclub.github.io/cnn-explainer/)
+3. [CNN From Scratch](https://youtu.be/Lakz2MoHy6o?si=aVOlYgqkc3PqUtk0)
+4. [MIT 6.S191: Convolutional Neural Networks](https://youtu.be/oGpzWAlP5p0?si=SkiLrZonrfxkBppr)
+
+
+
+
+
+
+
