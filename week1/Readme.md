@@ -1,49 +1,38 @@
-# **Visual Question Answering (VQA) Project**
+# 📚 Week 1 — Introduction to Computer Vision
 
-## 📌 Introduction
+## Welcome to Week 1! 🚀
 
-The **Virtual Question Answering (VQA)** project explores an exciting area where **Computer Vision** meets **Natural Language Processing (NLP)**. The goal is to build an intelligent system capable of looking at an image, understanding its visual content, and answering natural-language questions about it. For example:
+Welcome to the first week of your Image Captioning journey! This week, we go back to the roots—not of magic or AI hype, but to the fundamentals of how machines interpret the world visually.
 
-> *“What is the man holding?”*  
-> *“How many people are in the image?”*  
-> *“Is the dog sitting or standing?”*
+The science of enabling machines to comprehend visual input, such as pictures and videos, so they can interpret what they "see," is known as computer vision. However, in order to understand this, we must first address two fundamental questions:
 
-This project provides a hands-on journey into **multimodal AI**, where models process both images and text together.
+-------------------------------------------
 
----
+## 📷 What is Computer Vision?
+Computer vision is **an AI domain enabling computers to interpret and understand the visual world from images and videos**, mimicking human sight by identifying objects, detecting patterns, and making decisions based on visual input, powering applications like self-driving cars, facial recognition, and automated quality control in manufacturing. It uses deep learning, neural networks, and algorithms to process pixel data, allowing machines to "see" and react to their environment, transforming various industries.
 
-## 📘 Project Description
+From recognizing faces in your phone to detecting objects in self-driving cars, CV powers some of the most exciting technologies today.
 
-This project builds a complete **end-to-end Visual Question Answering pipeline** using state-of-the-art **Vision–Language models**, such as:
+At its core, Computer Vision teaches machines to answer questions like:
+* What is in this image?
+* Where is it located?
+* What action is happening?
+* How does the appearance change?
 
-- **BLIP (Bootstrapped Language-Image Pretraining)**  
-- **Flamingo-style multimodal transformers**  
-- **CLIP-based encoders**  
+**Applications of Computer Vision**
+* **Medical Imagening**: helps in MRI reconstruction, automatic pathology, diagnosis, and computer aided surgeries and more.
+* **AR/VR**: Object occlusion, outside-in tracking, and inside-out tracking for virtual and augmented reality.
+* **Smartphones** : All the photo filters (including animation filters on social media), QR code scanners, panorama construction, Computational photography, face detectors, image detectors like (Google Lens, Night Sight) that we use are computer vision applications.
+* **Internet**: Image search, Mapping, photo captioning, Ariel imaging for maps, video categorization and more....
 
-The system integrates image features and question embeddings to generate accurate and context-aware answers.
+To solve these problems, CV uses powerful models such as:
+* **Convolutional Neural Networks (CNNs)** — specialized neural networks that extract rich features from images.
+* **Vision Transformers (ViT)** — transformer-based architectures adapted for image understanding.
+* **Transfer Learning** — using pretrained models like ResNet or EfficientNet to leverage prior knowledge.
 
-A major focus of the project is **explainability** — understanding *why* the model gives a certain answer. To accomplish this, participants will design and implement **attention-based heatmaps and visualizations** that show which parts of the image influenced the model’s decision. This helps create an **interpretable and trustworthy AI system**.
+This week, you’ll explore the foundations that make these models work.  
 
----
-
-## 🎯 Project Outcomes
-
-By the end of the project, mentees will:
-
-- Build a **working VQA system** that answers questions about real-world images  
-- Implement **visual attention heatmaps** for explainability  
-- Evaluate model performance using:
-  - Accuracy  
-  - Plausibility  
-  - Interpretability metrics  
-- Gain hands-on experience in:
-  - Multimodal learning  
-  - Explainable AI (XAI)  
-  - Vision-language reasoning  
-  - Working with pretrained models and transformers  
-
----
-
+---------------------------------------------------------
 # 🗓️ Week 1: Learning Resources & Setup
 
 Week 1 focuses on environment setup, understanding tools, and building foundational knowledge for Vision & Language modeling.
@@ -131,10 +120,27 @@ Expected example output:
 
 If ***False*** appears, your CUDA or PyTorch installation needs adjustment.
 
-[Learning Resources](https://www.geeksforgeeks.org/applications-of-computer-vision/)
-
-
 ---
+
+## OpenCV for Computer Vision
+OpenCV (Open Source Computer Vision), a cross-platform and free to use library of functions is based on real-time Computer Vision which supports Deep Learning frameworks that aids in image and video processing.  In Computer Vision, the principal element is to extract the pixels from the image to study the objects and thus understand what it contains.
+
+Below are a few key aspects that Computer Vision seeks to recognize in the photographs:
+* Object Detection: The location of the object.
+* Object Recognition: The objects in the image, and their positions.
+* Object Classification: The broad category that the object lies in.
+* Object Segmentation: The pixels belonging to that object.
+* 
+To have this library make sure the latest version python and pip (python package installer) is already installed on your device.
+
+To install OpenCV, just go to the command-line and type the following commands:
+1. On Windows/MacOS: **pip install opencv-python**
+2. On Linux: **pip3 install opencv-python**
+3. [Set up Opencv with anaconda environment](https://www.geeksforgeeks.org/set-opencv-anaconda-environment/)
+
+[OpenCV Tutorial](https://youtu.be/oXlwWbU8l2o?si=BnesPVnjBWRd6_gJ)
+
+[OpenCV: Python Documentation](https://docs.opencv.org/4.12.0/d6/d00/tutorial_py_root.html)
 
 ## PyTorch for Deep Learning
 
@@ -143,6 +149,54 @@ PyTorch is a popular open-source deep learning framework known for its flexibili
  * [[Codemy.com – Deep Learning With PyTorch]](https://www.youtube.com/playlist?list=PLCC34OHNcOtpcgR9LEYSdi9r7XIbpkpK1) : First 17 videos are sufficient :)
  * [[PyTorch – PyTorch Beginner Series]](https://www.youtube.com/playlist?list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN)
  * [[Official PyTorch Documentation]](https://docs.pytorch.org/docs/stable/index.html) : Always go through the documentation to understand and fix your errors, you can use ChatGPT/Microsoft Bing/Copilot for Code Error Correction too, however, it gets too easy then :)
+
+## Image Preprocessing
+This is one of the most important parts of the Computer Vision pipeline.
+Preprocessing prepares raw images into forms suitable for training.
+
+### 🔧 Key Elements of Image Preprocessing
+1. **Image Resizing**
+    * Make all images the same shape.
+    * Ex: Resize to ***224×224** for CNNs (ResNet, VGG)
+2. **Normalization**
+    * Scale pixel range (0–255 → 0–1 or standardized)
+    *  Example of PyTorch:
+       ```
+       mean = [0.485, 0.456, 0.406]
+       std  = [0.229, 0.224, 0.225]
+       ```
+3. **Data Augmentation (for generalization)**
+    * Random Crop
+    * Random Flip
+    * Rotation
+    * Color Jitter
+    * Gaussian Noise
+    * Cutout/ Cutmix/ Mixup
+
+    This prevents model from overfitting.
+4. **Denoising/ Filtering**
+   * Gaussian Blur
+   * Median Filter
+   * Bilateral Filter
+  
+    Used when Image contain Noise.
+5. **Image Transformation**
+    * Grayscale conversion
+    * Convert between BGR ↔ RGB (OpenCV images are BGR!)
+  
+6. **Edge / Feature Enhancements:**
+Useful in early CV tasks or classical ML pipelines (In modern Architectures we allow our model to learn these filter values from the data itself as a learnable parameter instead of manually implementing them.)
+    * Sobel filter
+    * Canny edge detector
+    * Laplacian
+
+All these techniques can be implemented with help of **OpenCV and PyTorch**.
+
+[The Complete Guide to Image Preprocessing Techniques in Python](https://medium.com/@maahip1304/the-complete-guide-to-image-preprocessing-techniques-in-python-dca30804550c)
+
+[Image Processing with OpenCV and Python](https://youtu.be/kSqxn6zGE0c?si=4vIHtLiihV0SjpE8)
+
+   
 
 
 ## Neural Network and CNN (Convolutional Neural Network) in Computer Vision
@@ -170,9 +224,4 @@ Go
 3. [CNN From Scratch](https://youtu.be/Lakz2MoHy6o?si=aVOlYgqkc3PqUtk0)
 4. [MIT 6.S191: Convolutional Neural Networks](https://youtu.be/oGpzWAlP5p0?si=SkiLrZonrfxkBppr)
 
-
-
-
-
-
-
+Happy learning! 🚀
