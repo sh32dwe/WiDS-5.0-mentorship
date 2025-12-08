@@ -21,11 +21,12 @@ in a matter of weeks — so staying **consistent** will make a huge difference i
 That said, don’t let the pace intimidate you. This journey is meant to challenge you, not overwhelm you.
 
 And please — **never hesitate to reach out if something isn’t clear.**
-If a concept feels confusing, if your model is misbehaving, or if you encounter an error that looks like it came straight from a horror movie… just ping us :)
+If a concept feels confusing, if your model is misbehaving, or if you encounter an error that looks like it came straight from a horror movie… just ping me.
 
 You’re not expected to know everything. You are expected to stay curious, ask questions, and keep learning.
 
 We’re in this together — and I’m here to guide you every step of the way.
+
 **Let’s build something amazing together! 🚀**
 
 ________________________________________________________________________________________
