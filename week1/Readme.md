@@ -38,7 +38,14 @@ This week, you’ll explore the foundations that make these models work.
 Week 1 focuses on environment setup, understanding tools, and building foundational knowledge for Vision & Language modeling.
 
 ---
+## Python
+Python is a beginner-friendly language widely used in data science and AI. With libraries like NumPy, Pandas, Matplotlib, and PyTorch, it’s ideal for data analysis, machine learning, and deep learning. Here are some key resources to learn or review Python basics (skip if you’re already familiar)
 
+[(Programming with Mosh)Python for Beginners - Learn Coding with Python in 1 Hour](https://www.youtube.com/watch?v=kqtD5dpn9C8)
+
+[w3schools.com](https://www.w3schools.com/python/default.asp)
+
+---
 ## ⚙️ Option 1: Working on Google Colab
 
 Google Colab is ideal for beginners and requires no installation. It provides free GPU access (a maximum of 12 hours per session).
@@ -49,8 +56,6 @@ Google Colab is ideal for beginners and requires no installation. It provides fr
 - Using GPU in Colab:
  
   Change Hardware Accelerator to **T4 GPU** in Runtime settings :)
-  
----
 
 ## ⚙️ Option 2: Setting Up a GPU-Enabled Conda Environment and Adding It to Jupyter Notebook
 
@@ -142,6 +147,7 @@ To install OpenCV, just go to the command-line and type the following commands:
 
 [OpenCV: Python Documentation](https://docs.opencv.org/4.12.0/d6/d00/tutorial_py_root.html)
 
+------
 ## PyTorch for Deep Learning
 
 PyTorch is a popular open-source deep learning framework known for its flexibility and ease of use. It supports dynamic computation graphs, making it ideal for research and experimentation in NLP, computer vision, and reinforcement learning. Below are some recommended resources to get started — use as many as you need
@@ -150,6 +156,7 @@ PyTorch is a popular open-source deep learning framework known for its flexibili
  * [[PyTorch – PyTorch Beginner Series]](https://www.youtube.com/playlist?list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN)
  * [[Official PyTorch Documentation]](https://docs.pytorch.org/docs/stable/index.html) : Always go through the documentation to understand and fix your errors, you can use ChatGPT/Microsoft Bing/Copilot for Code Error Correction too, however, it gets too easy then :)
 
+-----
 ## Image Preprocessing and Transformation
 Image Preprocessing is one of the most important parts of the Computer Vision pipeline.
 Preprocessing prepares raw images into forms suitable for training.
@@ -198,7 +205,7 @@ All these techniques can be implemented with help of **OpenCV and PyTorch**.
 
 [Image Transformations using OpenCV in Python](https://www.geeksforgeeks.org/python/image-transformations-using-opencv-in-python/)
 
-#### 📌 Important Note on Image Preprocessing and Image Transformation
+### 📌 Important Note on Image Preprocessing and Image Transformation
 Image preprocessing and image transformation are important components of a computer vision pipeline, but it is essential to understand that **not all techniques are applied together**. The choice of preprocessing steps depends on several factors, including the **model architecture, task requirements, size and variability of the dataset, and the model’s capacity (number of parameters).**
 
 **Image preprocessing**—such as resizing, normalization, or noise reduction—ensures that input images are consistent and suitable for training. I**mage transformations**—often used as data augmentation—introduce variations through operations like flipping, rotation, cropping, or color adjustments to improve generalization.
@@ -213,10 +220,11 @@ For example:
 
 In summary, **image preprocessing and transformation are not one-size-fits-all**. They should be carefully selected to align with the model, the dataset, and the task to ensure effective and reliable training.
 
+----------
 
 ## Neural Network and CNN (Convolutional Neural Network) in Computer Vision
 
-### Neural Network and Deep Neural Network
+### Neural Networks and Deep Neural Network 
 Inspired by the human brain, neural networks use interconnected artificial “neurons” to process inputs and generate outputs. They power applications like image recognition, language processing, and decision-making. Explore these resources to understand how they enable intelligent systems.
 
 1. [[Neural Networks--3Blue1Brown]](https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&si=9lcJKb1AlcvvPxwZ) : First 4 videos should suffice.
@@ -240,7 +248,9 @@ Follow as many as you can:
 3. [CNN From Scratch](https://youtu.be/Lakz2MoHy6o?si=aVOlYgqkc3PqUtk0)
 4. [MIT 6.S191: Convolutional Neural Networks](https://youtu.be/oGpzWAlP5p0?si=SkiLrZonrfxkBppr)
 
-### Transfer Learning
+--------------
+
+## Transfer Learning
 Transfer learning for feature extraction uses a pre-trained deep learning model (like VGG, ResNet) as a fixed feature extractor by freezing its weights, removing its original final layers, and adding new, trainable layers (e.g., dense layers) for a new task, making it ideal for small datasets because it leverages general features (edges, textures) learned from huge datasets (like ImageNet) to quickly adapt to related problems with less training.
 
 #### How it Works
@@ -254,12 +264,23 @@ Transfer learning for feature extraction uses a pre-trained deep learning model 
 * **Faster Training**: Training only the final layers is much quicker than training a whole network from scratch.
 * **Avoids Overfitting**: The pre-trained weights provide robust, general features, reducing the risk of overfitting on small datasets.
 
-#### When to Use it**
+#### When to Use it
 * Your new dataset is small and similar to the original dataset the model was trained on.
 * You need quick results and have limited computational resources.
+
+Here are some helpful resources to learn more:
 
 [Transfer Learning: Feature Extraction and Fine tuning](https://medium.com/data-reply-it-datatech/transfer-learning-feature-extraction-and-fine-tuning-db7d82767992)
 
 [Fine Tuning vs Feature Extraction in Transfer Learning](https://codefinity.com/blog/Fine-Tuning-vs-Feature-Extraction-in-Transfer-Learning)
+
+[PyTorch - The Basics of Transfer Learning with TorchVision and AlexNet (YouTube)](https://www.youtube.com/watch?v=8etkVC93yU4)
+
+-------
+
+## Some Pretrained Models and Architecture
+[Pytorch ResNet implementation from Scratch (YouTube)](https://www.youtube.com/watch?v=DkNIBBBvcPs)
+
+[CNN Architectures (AlexNet, VGGNet, Inception ResNet)](https://www.youtube.com/watch?v=CNNnzl8HIIU)
 
 Happy learning! 🚀
