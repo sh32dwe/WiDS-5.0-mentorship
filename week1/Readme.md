@@ -130,7 +130,7 @@ Below are a few key aspects that Computer Vision seeks to recognize in the photo
 * Object Recognition: The objects in the image, and their positions.
 * Object Classification: The broad category that the object lies in.
 * Object Segmentation: The pixels belonging to that object.
-* 
+
 To have this library make sure the latest version python and pip (python package installer) is already installed on your device.
 
 To install OpenCV, just go to the command-line and type the following commands:
@@ -150,8 +150,8 @@ PyTorch is a popular open-source deep learning framework known for its flexibili
  * [[PyTorch – PyTorch Beginner Series]](https://www.youtube.com/playlist?list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN)
  * [[Official PyTorch Documentation]](https://docs.pytorch.org/docs/stable/index.html) : Always go through the documentation to understand and fix your errors, you can use ChatGPT/Microsoft Bing/Copilot for Code Error Correction too, however, it gets too easy then :)
 
-## Image Preprocessing
-This is one of the most important parts of the Computer Vision pipeline.
+## Image Preprocessing and Transformation
+Image Preprocessing is one of the most important parts of the Computer Vision pipeline.
 Preprocessing prepares raw images into forms suitable for training.
 
 ### 🔧 Key Elements of Image Preprocessing
@@ -196,7 +196,22 @@ All these techniques can be implemented with help of **OpenCV and PyTorch**.
 
 [Image Processing with OpenCV and Python](https://www.youtube.com/watch?v=kSqxn6zGE0c&t=00s)
 
-   
+[Image Transformations using OpenCV in Python](https://www.geeksforgeeks.org/python/image-transformations-using-opencv-in-python/)
+
+#### 📌 Important Note on Image Preprocessing and Image Transformation
+Image preprocessing and image transformation are important components of a computer vision pipeline, but it is essential to understand that **not all techniques are applied together**. The choice of preprocessing steps depends on several factors, including the **model architecture, task requirements, size and variability of the dataset, and the model’s capacity (number of parameters).**
+
+**Image preprocessing**—such as resizing, normalization, or noise reduction—ensures that input images are consistent and suitable for training. I**mage transformations**—often used as data augmentation—introduce variations through operations like flipping, rotation, cropping, or color adjustments to improve generalization.
+
+However, the selection of these steps must be deliberate.
+
+For example:
+* Models like Vision Transformers may require fixed-size inputs and benefit from stronger augmentations, while CNNs may perform adequately with simpler preprocessing.
+* Tasks sensitive to spatial or color information may restrict the types of transformations allowed.
+* Small datasets often require more augmentation to avoid overfitting, whereas large datasets typically need only minimal preprocessing.
+* Large models with many parameters may demand stronger augmentation to prevent overfitting, while smaller models may require simpler inputs for stable training.
+
+In summary, **image preprocessing and transformation are not one-size-fits-all**. They should be carefully selected to align with the model, the dataset, and the task to ensure effective and reliable training.
 
 
 ## Neural Network and CNN (Convolutional Neural Network) in Computer Vision
@@ -206,19 +221,20 @@ Inspired by the human brain, neural networks use interconnected artificial “ne
 
 1. [[Neural Networks--3Blue1Brown]](https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&si=9lcJKb1AlcvvPxwZ) : First 4 videos should suffice.
 2. [[The spelled-out intro to neural networks and backpropagation: Building micrograd--
-Andrej Karpathy]](https://youtu.be/VMj-3S1tku0?si=GvBjrYHb4wPrZX5M) : This is the most step-by-step spelled-out explanation of backpropagation and training of neural networks. It only assumes basic knowledge of Python and a vague recollection of calculus.
-3. [[Implementation of  Basic Neural Network with single hidden layer]](https://www.youtube.com/watch?v=mlk0rddP3L4&list=PLuhqtP7jdD8CftMk831qdE8BlIteSaNzD) : First 7 videos should suffice
+Andrej Karpathy]](https://www.youtube.com/watch?v=VMj-3S1tku0&t=00s) : This is the most step-by-step spelled-out explanation of backpropagation and training of neural networks. It only assumes basic knowledge of Python and a vague recollection of calculus.
+3. [Implementation of  Basic Neural Network with single hidden layer](https://www.youtube.com/watch?v=mlk0rddP3L4&list=PLuhqtP7jdD8CftMk831qdE8BlIteSaNzD) : First 7 videos should suffice
 
 ### Convolutional Neural Networks
 A Convolutional Neural Network (ConvNet) is a class of deep learning models designed to process data with a grid-like topology, such as images. It is a foundational technology for most modern computer vision applications and is inspired by the human visual cortex.
 
 They are used in a wide range of fields:
-* Image classification, Segmentation and object detection (e.g., in self-driving cars, social media tagging)
-* Medical image analysis (e.g., detecting tumors in X-rays or MRIs)
-* Natural language processing and speech recognition (e.g., virtual assistants)
+* Image classification, Segmentation and object detection (e.g. in self-driving cars, social media tagging)
+* Medical image analysis (e.g. detecting tumors in X-rays or MRIs)
+* Natural language processing and speech recognition (e.g. virtual assistants)
 
 **Learning Resources**
-Go 
+Follow as many as you can:
+
 1. [Convolutional Neural Networks: A Comprehensive Guide (Medium)](https://medium.com/thedeephub/convolutional-neural-networks-a-comprehensive-guide-5cc0b5eae175)
 2. [CNN Explainer: Visual Explaination of Convolutional Neural Networks](https://poloclub.github.io/cnn-explainer/)
 3. [CNN From Scratch](https://youtu.be/Lakz2MoHy6o?si=aVOlYgqkc3PqUtk0)
