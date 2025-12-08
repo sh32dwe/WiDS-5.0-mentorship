@@ -31,7 +31,7 @@ We’re in this together — and I’m here to guide you every step of the way.
 
 ________________________________________________________________________________________
 
-## Project Overview
+## 🌟 Project Overview
 This project introduces you to Vision-Language AI, focusing mainly on Image Captioning while also connecting concepts to VQA systems. This repository will guide you through key concepts in CV and NLP and culminate in building a full image captioning pipeline..
 
 You will:
@@ -106,5 +106,5 @@ Over the first three weeks, you will complete short weekly assignments:
 2. **Complete the final image captioning project (mandatory)**
 3. **Submit all deliverables on time**
 
-Failure to meet these requirements will make the mentee ineligible for the certificate.
+***Failure to meet these requirements will make you ineligible for the certificate.***
 _________________________________________________________________________________________
