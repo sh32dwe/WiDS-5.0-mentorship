@@ -138,7 +138,7 @@ To install OpenCV, just go to the command-line and type the following commands:
 2. On Linux: **pip3 install opencv-python**
 3. [Set up Opencv with anaconda environment](https://www.geeksforgeeks.org/set-opencv-anaconda-environment/)
 
-[OpenCV Tutorial](https://youtu.be/oXlwWbU8l2o?si=BnesPVnjBWRd6_gJ)
+[OpenCV Tutorial](https://www.youtube.com/watch?v=oXlwWbU8l2o&t=00s)
 
 [OpenCV: Python Documentation](https://docs.opencv.org/4.12.0/d6/d00/tutorial_py_root.html)
 
