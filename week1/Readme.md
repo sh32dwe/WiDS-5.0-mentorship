@@ -1,12 +1,10 @@
 # 📚 Week 1 — Introduction to Computer Vision
-
+----------
 ## Welcome to Week 1! 🚀
 
 Welcome to the first week of your Image Captioning journey! This week, we go back to the roots—not of magic or AI hype, but to the fundamentals of how machines interpret the world visually.
 
-The science of enabling machines to comprehend visual input, such as pictures and videos, so they can interpret what they "see," is known as computer vision. However, in order to understand this, we must first address two fundamental questions:
-
--------------------------------------------
+-----------------
 
 ## 📷 What is Computer Vision?
 Computer vision is **an AI domain enabling computers to interpret and understand the visual world from images and videos**, mimicking human sight by identifying objects, detecting patterns, and making decisions based on visual input, powering applications like self-driving cars, facial recognition, and automated quality control in manufacturing. It uses deep learning, neural networks, and algorithms to process pixel data, allowing machines to "see" and react to their environment, transforming various industries.
@@ -32,8 +30,8 @@ To solve these problems, CV uses powerful models such as:
 
 This week, you’ll explore the foundations that make these models work.  
 
----------------------------------------------------------
-# 🗓️ Week 1: Learning Resources & Setup
+------
+## 🗓️ Week 1: Learning Resources & Setup
 
 Week 1 focuses on environment setup, understanding tools, and building foundational knowledge for Vision & Language modeling.
 
@@ -279,8 +277,8 @@ Here are some helpful resources to learn more:
 -------
 
 ## Some Pretrained Models and Architecture
-[Pytorch ResNet implementation from Scratch (YouTube)](https://www.youtube.com/watch?v=DkNIBBBvcPs)
+[Pytorch ResNet implementation from Scratch -YouTube](https://www.youtube.com/watch?v=DkNIBBBvcPs)
 
-[CNN Architectures (AlexNet, VGGNet, Inception ResNet)](https://www.youtube.com/watch?v=CNNnzl8HIIU)
+[CNN Architectures(AlexNet, VGGNet, Inception ResNet) - YouTube](https://www.youtube.com/watch?v=CNNnzl8HIIU)
 
 Happy learning! 🚀
