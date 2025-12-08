@@ -69,6 +69,7 @@ This week focuses on the language side of our problem.
 we will explore some advanced architecture in the domain of Conputer Vision and  merge everything to build the foundation of your captioning model — and understand why it works.
 
 #### Topics Covered
+* Vision Transformers(ViT) - intro 
 * Encoder–Decoder architecture
 * CNN/ViT as the image encoder
 * LSTM/Transformer as the caption decoder
