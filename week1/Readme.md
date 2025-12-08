@@ -240,4 +240,26 @@ Follow as many as you can:
 3. [CNN From Scratch](https://youtu.be/Lakz2MoHy6o?si=aVOlYgqkc3PqUtk0)
 4. [MIT 6.S191: Convolutional Neural Networks](https://youtu.be/oGpzWAlP5p0?si=SkiLrZonrfxkBppr)
 
+### Transfer Learning
+Transfer learning for feature extraction uses a pre-trained deep learning model (like VGG, ResNet) as a fixed feature extractor by freezing its weights, removing its original final layers, and adding new, trainable layers (e.g., dense layers) for a new task, making it ideal for small datasets because it leverages general features (edges, textures) learned from huge datasets (like ImageNet) to quickly adapt to related problems with less training.
+
+#### How it Works
+1. **Load a Pre-trained Model**: Start with a model (e.g., VGG16, ResNet) already trained on a large dataset (e.g., ImageNet).
+2. **Freeze the Base**: Keep the weights of the convolutional base (the bulk of the network) frozen, meaning they won't change during training.
+3. **Replace the Head**: Remove the original classification (output) layers and add new, custom layers for your specific task (e.g., a new dense layer for binary classification).
+4. **Train New Layers**: Train only the new layers on your smaller dataset. The frozen base acts as a powerful feature generator, extracting rich, generic features that the new layers learn to map to your specific output.
+
+#### Key Advantages
+* **Less Data Needed**: Excellent for tasks with limited labeled data, as most learning happens on the large source dataset.
+* **Faster Training**: Training only the final layers is much quicker than training a whole network from scratch.
+* **Avoids Overfitting**: The pre-trained weights provide robust, general features, reducing the risk of overfitting on small datasets.
+
+#### When to Use it**
+* Your new dataset is small and similar to the original dataset the model was trained on.
+* You need quick results and have limited computational resources.
+
+[Transfer Learning: Feature Extraction and Fine tuning](https://medium.com/data-reply-it-datatech/transfer-learning-feature-extraction-and-fine-tuning-db7d82767992)
+
+[Fine Tuning vs Feature Extraction in Transfer Learning](https://codefinity.com/blog/Fine-Tuning-vs-Feature-Extraction-in-Transfer-Learning)
+
 Happy learning! 🚀
