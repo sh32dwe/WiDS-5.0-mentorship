@@ -194,7 +194,7 @@ All these techniques can be implemented with help of **OpenCV and PyTorch**.
 
 [The Complete Guide to Image Preprocessing Techniques in Python](https://medium.com/@maahip1304/the-complete-guide-to-image-preprocessing-techniques-in-python-dca30804550c)
 
-[Image Processing with OpenCV and Python](https://youtu.be/kSqxn6zGE0c?si=4vIHtLiihV0SjpE8)
+[Image Processing with OpenCV and Python](https://www.youtube.com/watch?v=kSqxn6zGE0c&t=00s)
 
    
 
